@@ -179,6 +179,9 @@ export function connectorRoutes(deps: HttpDeps) {
             canEdit: canEdit(provider, ctxOf(req)),
             canManageSharing: canManageSharing(provider, ctxOf(req)),
             headerNames: headers.map((h) => h.name),
+            // An open-connector connection's OAuth is owned by open-connector, never by
+            // this CP's grant custody — so the row is always `headers` here.
+            auth: provider.auth,
             createdAt: provider.createdAt.toISOString(),
             grantKey: grant.key
           }
