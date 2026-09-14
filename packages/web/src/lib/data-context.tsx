@@ -669,6 +669,7 @@ const MOCK_MCP_PROVIDERS: McpProviderDto[] = [
     canEdit: true,
     canManageSharing: true,
     url: 'https://mcp.example.test/grafana/sse',
+    auth: 'headers',
     headerNames: ['Authorization'],
     createdAt: '2026-07-14T00:00:00Z'
   },
@@ -684,6 +685,7 @@ const MOCK_MCP_PROVIDERS: McpProviderDto[] = [
     canEdit: true,
     canManageSharing: true,
     url: 'https://connectors.example.test/mcp',
+    auth: 'headers',
     headerNames: ['x-oomol-connector-id'],
     createdAt: '2026-07-16T00:00:00Z'
   },
@@ -699,6 +701,7 @@ const MOCK_MCP_PROVIDERS: McpProviderDto[] = [
     canEdit: true,
     canManageSharing: true,
     url: 'https://connectors.example.test/mcp',
+    auth: 'headers',
     headerNames: ['x-oomol-connector-id'],
     createdAt: '2026-07-18T00:00:00Z'
   },
@@ -713,6 +716,7 @@ const MOCK_MCP_PROVIDERS: McpProviderDto[] = [
     canEdit: true,
     canManageSharing: true,
     url: 'https://mcp.example.test/deepseek',
+    auth: 'headers',
     headerNames: [],
     createdAt: '2026-07-16T00:00:00Z'
   }
