@@ -9,6 +9,7 @@ const provider: McpProviderRecord = {
   orgId: 'org-1' as OrgId,
   name: 'linear',
   kind: 'custom',
+  auth: 'headers',
   transport: 'http',
   url: 'https://mcp.linear.app/sse',
   visibility: 'org',
